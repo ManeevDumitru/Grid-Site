@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shitft's Site Library</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="shortcut icon" type="image/png" href="img/utility/Log.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/bright.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/dark.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/blue.css">
+</head>
+
+<body class="bodyLibrary themeDarkBody">
+
+    <!--Header-->
+
+    <header>
+        <div class="inside-header">
+            <div class="inside-header-left">
+                <div class="logo">
+                    <a href="#"><span id="logo-left">Shift</span><span id="logo-right">'s Shop</span></a>
+                </div>
+            </div>
+            <div class="inside-header-right">
+                <nav>
+                    <ul>
+                        <li>
+
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdownButton">Themes</a>
+                            <div class="dropdownMenuThemes">
+                                <a href="#" class="themeBrightTheme">
+                                    bright
+                                </a>
+                                <a href="#" class="themeDarkTheme">
+                                    dark
+                                </a>
+                                <a href="#" class="themeBlueTheme">
+                                    blue
+                                </a>
+                            </div>
+                        </li>
+                        <li class="dropdownButton">
+                            <a href="#" class="dropdownButton">Account</a>
+                            <div class="dropdownMenuAccount">
+                                <div class="buttonRegister"><a href="register.html" class="regLink">Register</a></div>
+                                <div class="buttonLogin">Sign In</div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Section-->
+
+    <section class="librarySection">
+
+        <h1>If u read this... GJ</h1>
+        <div class="sectionForSearchForm">
+            If you're searching for a specific game, this might help ya
+            <input type="text" title="rico" name="inputForGames" placeholder="Search for a specific game">
+        </div>
+        <div class="libraryItself">
+            <div class="sectionForCategories">
+                <div class="genresContainer">
+                    <div class="categoriesLogo">
+                        Categories
+                    </div>
+                    <div class="categoriesContainer">
+                        <ul>
+                            <li id="cb1" class="brightThem">
+                                <input type="checkbox" name="categoryCheckbox" id="LIN"><span
+                                    class="customCheckbox"></span><label class="categorysss">Linear</label>
+                            </li>
+                            <li id="cb2" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="OW"><span
+                                    class="customCheckbox"></span><label class="categorysss">Open World</label>
+                            </li>
+                            <li id="cb3" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="HOR"><span
+                                    class="customCheckbox"></span><label class="categorysss">Horror</label>
+                            </li>
+                            <li id="cb4" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="HAR"><span
+                                    class="customCheckbox"></span><label class="categorysss">Hardcore</label>
+                            </li>
+                            <li id="cb5" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="SP"><span
+                                    class="customCheckbox"></span><label class="categorysss">Singleplayer</label>
+                            </li>
+                            <li id="cb6" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="MP"><span
+                                    class="customCheckbox"></span><label class="categorysss">Multiplayer </label>
+                            </li>
+                            <li id="cb7" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="ADV"><span
+                                    class="customCheckbox"></span><label class="categorysss">Adventure</label>
+                            </li>
+                            <li id="cb8" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="RPG"><span
+                                    class="customCheckbox"></span><label class="categorysss">RPG</label>
+                            </li>
+                            <li id="cb9" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="FP"><span
+                                    class="customCheckbox"></span><label class="categorysss">FP</label>
+                            </li>
+                            <li id="cb10" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="TP"><span
+                                    class="customCheckbox"></span><label class="categorysss">TP</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="studioContainer">
+                    <div class="categoriesLogo">
+                        Studios
+                    </div>
+                    <div class="studiosContainer">
+                        <ul>
+                            <li id="cb11" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="CDPR"><span
+                                    class="customCheckbox"></span>
+                                <label>CD Projekt Red</label>
+                            </li>
+                            <li id="cb12" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="RG"><span
+                                    class="customCheckbox"></span>
+                                <label>Rockstar Games</label>
+                            </li>
+                            <li id="cb13" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="UBI"><span
+                                    class="customCheckbox"></span>
+                                <label>Ubisoft</label>
+                            </li>
+                            <li id="cb14" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="BNG"><span
+                                    class="customCheckbox"></span>
+                                <label>Bandai Namco Games</label>
+                            </li>
+                            <li id="cb15" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="KP"><span
+                                    class="customCheckbox"></span>
+                                <label>Kojima Productions</label>
+                            </li>
+                            <li id="cb16" class="brightTheme">
+                                <input type="checkbox" name="categoryCheckbox" id="OTHER"><span
+                                    class="customCheckbox"></span>
+                                <label>Others</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section For Games -->
+
+            <div class="sectionForGames">
+                <a href="">
+                    <div class="cardLibraryGameWrapper SP OW FP CDPR">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/CP2077lc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Cyberpunk <span class="card-TitleAnounced">SOON <i
+                                        class="fas fa-calendar-alt"></i></span>
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                CD Project Red
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 29.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper SP OW TP CDPR">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/WITCHER3lc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Witcher 3
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                CD Project Red
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    10%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 14.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 12.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper MP CDPR">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/GWINTlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Gwint
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                CD Project Red
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    Free
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper FP TP ADV SP MP OW RG">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/RDR2lc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Red Dead Redemption 2
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Rockstar Games
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    10%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 34.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 29.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW SIM SP MP ADV FP TP RG">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/GTAVlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                GTA V
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Rockstar Games
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    10%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 29.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 24.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW SP MP ADV FP TP RG">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/GTAIVlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                GTA IV
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Rockstar Games
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    10%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 14.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 11.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW SP MP TP UBI">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/WDLlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Watch Dogs Legion
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Ubisoft
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    10%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 34.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 29.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW TP SP UBI">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/ACOlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Assassin's Creed Odyssey
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Ubisoft
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceDiscountValue">
+                                    20%
+                                </span>
+                                <span class="card-PriceDiscounted">
+                                    $ 34.99
+                                </span>
+                                <span class="card-PriceCurrent">
+                                    $ 29.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW SP TP UBI">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/ACOrlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Assassin's Creed Origins
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Ubisoft
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 34.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper LIN HOR HAR SP MP ADV RPG TP BNG">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/DS3lc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Dark Souls 3
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Bandai Namco Games
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 29.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper LIN HAR SP TP BNG">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/CVlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Code Vein
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Bandai Namco Games
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 24.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper OW HOR HAR SP MP TP ADV KP">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/DSlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Death Stranding
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Kojima Productions
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 59.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper LIN SP ADV FP OTHER">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/FWlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Firewatch
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Indie
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 9.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper LIN SP TP ADV HAR HOR">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/LNlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Little Nightmares
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Indie
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 9.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cardLibraryGameWrapper LIN SP TP ADV HAR HOR">
+                        <div class="cardLibraryGameLogoHover">
+                            <div class="cardLibraryGameLogo">
+                                <img src="img/libraryCard/Inlc.jpg" alt="Cyberpunk 2077">
+                            </div>
+                        </div>
+                        <div class="card-GameDesc">
+                            <div class="card-GameDescTitle">
+                                Inside
+                            </div>
+                            <div class="card-GameDescSubtitle">
+                                Indie
+                            </div>
+                            <div class="card-GameDescPrice">
+                                <span class="card-PriceCurrent">
+                                    $ 9.99
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+        <button class="buttonUp">
+            <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </button>
+        <div class="divd">
+            <img src="gif/gun.png" alt="" id="gun">
+        </div>
+        <div class="background">
+            <div class="popupLoginMenu">
+                <form>
+                    Login
+                    <div class="inputPopupTextAbove">
+                        Nickname
+                    </div>
+                    <input type="text" name="inputLogin">
+                    <div class="inputPopupTextAbove">
+                        Password
+                    </div>
+                    <div class="loginPasswordInput">
+                        <input type="password" name="inputPassword">
+                    </div>
+                    <div class="registerLink">
+                        <a href="register.html" id="reg">Register now</a>
+                    </div>
+                    <div class="loginExtraVariantsContainer">
+                        Login with
+                        <div class="loginExtraVariants">
+                            <a href="https://vk.com"><i class="fab fa-vk"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://web.telegram.org"><i class="far fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    <input type="submit" formmethod="post" class="inputSubmit" name="loginSubmit" value="Submit">
+                </form>
+                <button><i class="fas fa-times-circle"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="topFooter">
+            <div class="inside-footer">
+                @Dumitru Maneev, all right reserved.
+            </div>
+        </div>
+        <div class="middleFooter">
+            <div class="inside-footer">
+                Daca textul dat este citit, atunci toata suma acumulata de Owner este scutita de plata
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div class="inside-footer">
+                Part of <img src="img/utility/USARBlogo.png" alt=""> project.
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

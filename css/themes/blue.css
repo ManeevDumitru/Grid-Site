@@ -1,0 +1,47 @@
+.themeBlueBody {
+    background: #1b2838;
+}
+.themeBlueNav {
+    background: #171a21;
+}
+.themeBlueCategory {
+    border-bottom: 1px solid #385577;
+    background: #25456b;
+    color: #26a4ed;
+    border-radius: 2px;
+}
+.themeBlueSection {
+    background: #25456b;
+    color: #26a4ed;
+    border-radius: 3px;
+}
+.themeBlueGameProduct {
+    color: #26a4ed;
+}
+.themeBlueGameProduct:hover {
+    background: #375279;
+    color: #26a4ed;
+}
+.themeBlueShowMoreButton {
+    background: #375279;
+}
+.themeBlueShowMoreButton:hover {
+    background: #365581;
+}
+.themeBlueLibraryBottom {
+    outline: 1px solid #1e3249;
+    background: #1e3249;
+    border-radius: 3px;
+}
+.themeBlueGameDescription {
+    background: #253b53;
+}
+.themeBlueFooter {
+    background: #171a21;
+}
+.themeBlueMiddleFooter {
+    background: #1a2235;
+}
+.themeBlueCalendarSection {
+    background: #1a2235;
+}

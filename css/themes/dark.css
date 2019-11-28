@@ -1,0 +1,48 @@
+.themeDarkBody {
+    background: #121212;
+}
+.themeDarkNav {
+    background: #282828;
+}
+.themeDarkPopup {
+    background: #404040;;
+}
+.themeDarkCategory {
+    border-bottom: 1px solid #747474;
+    background: #282828;
+    color: #e0e0e0;
+    border-radius: 2px;
+}
+.themeDarkSection {
+    background: #282828;
+    color:#ffffff;
+    border-radius: 3px;
+}
+.themeDarkGameProduct {
+    color:#ffffff;
+    box-shadow: 0 1px 0 #474747;
+}
+.themeDarkGameProduct:hover {
+    background: #646464;
+    color: #ffffff;
+}
+.themeDarkShowMoreButton {
+    background: #444444;
+}
+.themeDarkShowMoreButton:hover {
+    background: #353535;
+}
+.themeDarkLibraryBottom {
+    background: #464649;
+    border-radius: 3px;
+}
+.themeDarkGameDescription {
+   background: #434346;
+}
+.themeDarkFooter {
+    background: #282828;
+}
+/* 
+.themeBlueFooter {
+    background: #171a21;
+} */
