@@ -375,9 +375,8 @@ section {
 
 .library {
     width: 100%;
-    margin: 0;
+    margin: 0 0 15px 0;
     padding: 0;
-    margin-bottom: 15px;
 }
 .library-games{
     width: 100%;
@@ -401,7 +400,7 @@ section {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    box-shadow: 0 1px 0 0 rgb(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 rgb(0, 0, 0, .2);
 }
 .game-product:hover {
     background: #e9e9e9;
@@ -431,7 +430,7 @@ section {
     grid-area: 1/1/-1/5;
     padding: 15px;
     font-size: 18px;
-    font-weight: 450;
+    font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -461,7 +460,6 @@ section {
     border: 1px solid #83c91a;
     background: linear-gradient(0deg, rgba(156,238,29,1) 35%, rgba(173,255,47,1) 95%);
     color: black;
-    border: none;
     outline: #a4fc20;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
@@ -529,7 +527,6 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px 275px 275px 60px;
-    grid-gap: none;
     overflow: hidden;
 }
 .hot-game-wrapper {
@@ -570,14 +567,14 @@ section {
     grid-template-columns: 580px 300px 300px;
     grid-template-rows: 300px;
     grid-gap: 10px;
-    display: flex;
-    flex-direction: row;
     padding: 0 0 5px 0;
     max-width: 1200px;
 }
 .news-container a {
     display: inline-block;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 .news-container img {
     width: 100%;
@@ -595,7 +592,6 @@ section {
 .news-secondary {
     width: 300px;
     height: 300px;
-    margin-left: 10px
 }
 .news-main, .news-secondary {
     position: relative;
@@ -728,7 +724,6 @@ input[name="inputLogin"], input[name="inputPassword"]{
     width:  200px;
     line-height: 30px;
     border-radius: 25px;
-    border: none;
     padding: 2px 0 2px 15px;
     border: 1px solid black;
 }
@@ -742,7 +737,6 @@ input[name="inputLogin"], input[name="inputPassword"]{
     position: relative;
 }
 .inputSubmit {
-    border: none;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -837,6 +831,7 @@ input[name="inputLogin"], input[name="inputPassword"]{
 
 
 /* library.thml */ /* library.thml */ /* library.thml */ /* library.thml */ 
+
 .bodyLibrary { 
     background: #e6e6e6; 
 }
@@ -1019,6 +1014,7 @@ a:hover .cardLibraryGameLogo {
 
 
 /* Calendar.html */ /* Calendar.html */ /* Calendar.html */ /* Calendar.html */ 
+
 .sectionForCalendar {
     max-width: 1000px;
 }
@@ -1138,24 +1134,87 @@ a:hover .cardLibraryGameLogo {
 
 
 
+/* register.html */ /* register.html */ /* register.html */ /* register.html */ 
+
 .bodyRegister {
     overflow: hidden;
 }
 .registrationFormContainer {
-    background: pink;
-    max-width: 600px;
+    max-width: 500px;
     height: 705px;
+    border: 1px solid gray;
+    background: #ffffff;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
+    font-size: 22px;
 }
 .registrationLogo {
     font-size: 30px;
     padding: 20px 20px 20px;
 }
-
-
+.registrationRowForName {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 15px 0 15px;
+}
+.registrationRowForName label {
+    grid-area: 1/1/1/1;
+}
+.registrationRowForName input {
+    grid-area: 2/1/2/1;
+    height: 30px;
+    transform: translate(0, 50%);
+}
+.fieldForName,  .fieldForSurname{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 50px;
+}
+.registrationRowForDate {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+}
+.fieldForDates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fieldForDates select:hover {
+    border: 1px solid black;
+}
+.registrationRowForGender {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    padding: 15px;
+}
+.fieldForFemaleGender {
+    grid-area: 2/1/2/1;
+    font-size: 16px;
+    line-height: 40px;
+}
+.fieldForMaleGender {
+    grid-area: 2/2/2/2;
+    font-size: 16px;
+    line-height: 40px;
+}
+.registrationRowForAccountName {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+}
+.fieldForAccountInput {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+}
 
 
 
@@ -1163,6 +1222,7 @@ a:hover .cardLibraryGameLogo {
 
 
 /* --------------- */
+
 .hide {
     display: none;
 }

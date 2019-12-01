@@ -82,50 +82,75 @@
             </div>
             <div class="registrationRowForDate">
                 <label>Birthday Date</label>
-                <select class="Date">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                <select class="Month">
-                    <option value="Jan">January</option>
-                    <option value="Feb">February</option>
-                    <option value="Mar">March</option>
-                    <option value="Apr">April</option>
-                    <option value="May">May</option>
-                    <option value="Jun">June</option>
-                    <option value="Jul">July</option>
-                    <option value="Aug">August</option>
-                    <option value="Sep">Septemer</option>
-                    <option value="Oct">Octber</option>
-                    <option value="Nov">November</option>
-                    <option value="Dec">December</option>
-                </select>
-                <select>
-                    <option value="1">1999</option>
-                    <option value="2">2000</option>
-                    <option value="3">2001</option>
-                    <option value="4">2002</option>
-                    <option value="5">2003</option>
-                    <option value="6">2004</option>
-                    <option value="7">2005</option>
-                </select>
+                <div class="fieldForDates">
+                    <select class="Date" required form name="inputBirthDay">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">1</option>
+                        <option value="12">2</option>
+                        <option value="13">3</option>
+                        <option value="14">4</option>
+                        <option value="15">5</option>
+                        <option value="16">6</option>
+                        <option value="17">7</option>
+                        <option value="18">8</option>
+                        <option value="19">9</option>
+                        <option value="20">10</option>
+                    </select>
+                    <select class="Month" form name="inputBirthMonth">
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">August</option>
+                        <option value="Sep">Septemer</option>
+                        <option value="Oct">Octber</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
+                    </select>
+                    <select form name="inputBirthYear">
+                        <option value="1">1999</option>
+                        <option value="2">2000</option>
+                        <option value="3">2001</option>
+                        <option value="4">2002</option>
+                        <option value="5">2003</option>
+                        <option value="6">2004</option>
+                        <option value="7">2005</option>
+                    </select>
+                </div>
             </div>
             <div class="registrationRowForGender">
-                <input type="radio" name="inputRegisterGender" id="genderFemale">
-                <label>Female</label>
-                <input type="radio" name="inputRegisterGender">
-                <label>Male</label>
+                Gender
+                <div class="fieldForFemaleGender">
+                    <input type="radio" name="inputRegisterGender" id="genderFemale" form>
+                    <label>Female</label>
+                </div>
+                <div class="fieldForMaleGender">
+                    <input type="radio" name="inputRegisterGender" form>
+                    <label>Male</label>
+                </div>
             </div>
             <div class="registrationRowForAccountName">
-                5
+                <label>Account Name</label>
+                    <div class="fieldForAccountInput">
+                        <input type="text" name="inputAccountName">
+                        <select>
+                            <option value="mail.ru">@mail.ru</option>
+                            <option value="list.ru">@list.ru</option>
+                            <option value="bk.ru">@bk.ru</option>
+                        </select>
+                    </div>
             </div>
             <div class="registrationRowForPassword">
                 6
