@@ -88,9 +88,13 @@ function buttonSwitchThemeBright(){
         $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
         $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
         $('.topFooter,.bottomFooter').removeClass('themeDarkFooter');
+        // // // // // // //
+        $('.libraryItself').addClass('themeBrightLibraryItself');
+        $('.sectionForSearchForm').addClass('themeBrightLibrarySearchForm');
             /* Remove Blue */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
+        $('.popupLoginForm').removeClass('themeBluePopupForm');
         $('.categoryname').removeClass('themeBlueCategory');
         $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeBlueSection');
         $('.card-recommendedGameDescription').removeClass('themeBlueGameDescription');
@@ -119,6 +123,7 @@ function buttonSwitchThemeDark(){
             /* Remove */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
+        $('.popupLoginForm').removeClass('themeBluePopupForm');
         $('.categoryname').removeClass('themeBlueCategory');
         $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeBlueSection');
         $('.card-recommendedGameDescription').removeClass('themeBlueGameDescription');
@@ -128,6 +133,9 @@ function buttonSwitchThemeDark(){
         $('.library-games-button-container').removeClass('themeBlueLibraryBottom');
         $('.middleFooter').removeClass('themeBlueMiddleFooter');
         $('.topFooter,.bottomFooter').removeClass('themeBlueFooter');
+        ///////////
+        $('.libraryItself').removeClass('themeBrightLibraryItself');
+        $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
     });
 }
 
@@ -136,6 +144,7 @@ function buttonSwitchThemeBlue(){
             /* Add */ 
         $('body').addClass('themeBlueBody');
         $('header').addClass('themeBlueNav');
+        $('.popupLoginForm').addClass('themeBluePopupForm');
         $('.categoryname').addClass('themeBlueCategory');
         $('.featured, .recommended, .library-games-left, .library-games-right, .news').addClass('themeBlueSection');
         $('.card-recommendedGameDescription').addClass('themeBlueGameDescription');
@@ -156,6 +165,9 @@ function buttonSwitchThemeBlue(){
         $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
         $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
         $('.topFooter,.bottomFooter').removeClass('themeDarkFooter');
+        //////////
+        $('.libraryItself').removeClass('themeBrightLibraryItself');
+        $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
     });
 }
 
@@ -170,29 +182,29 @@ function sliderMainSlider(){
         pauseOnDotsHover: true,
         autoplaySpeed: 7500,
         responsive: [
-          {
-          breakpoint: 992,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 1
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1
             }
-          },
-          {
+        },
+        {
             breakpoint: 800,
             settings: {
-              slidesToScroll: 1,
-              slidesToShow: 1
+                slidesToScroll: 1,
+                slidesToShow: 1
             }
-          },
-          {
+        },
+        {
             breakpoint: 520,
             settings: {
-              slidesToScroll: 1,
-              slidesToShow: 1
+                slidesToScroll: 1,
+                slidesToShow: 1
             }
-          }
+        }
         ]
-      });
+    });
 }
 
 
@@ -291,13 +303,13 @@ function handleCategoryFilter() {
 
 function preview_image(event) 
 {
- var reader = new FileReader();
- reader.onload = function()
- {
-  var output = document.getElementById('output_image');
-  output.src = reader.result;
- }
- reader.readAsDataURL(event.target.files[0]);
+    var reader = new FileReader();
+    reader.onload = function()
+{
+    var output = document.getElementById('output_image');
+    output.src = reader.result;
+}
+    reader.readAsDataURL(event.target.files[0]);
 }
 
 
@@ -319,10 +331,10 @@ function preview_image(event)
 
 function playMeme() { 
     const Audio = document.getElementById("butm"); 
- if 
+if 
     (Audio.paused) 
         Audio.play();
-  else 
+else 
     Audio.pause();
 }
 
@@ -341,8 +353,8 @@ function tbcde() {
         $('body').css({
             'overflow': 'hidden'
         });
-       }, 3500);
-       setTimeout(function() {
+    }, 3500);
+        setTimeout(function() {
         Audio.pause();
         Audio.currentTime=0;
         $('.tbcd').css({
@@ -357,5 +369,5 @@ function tbcde() {
         $('body').css({
             'overflow': 'visible'
         });
-       }, 10700);
+        }, 10700);
 }

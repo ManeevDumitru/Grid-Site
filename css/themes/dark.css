@@ -4,8 +4,8 @@
 .themeDarkNav {
     background: #282828;
 }
-.themeDarkPopup {
-    background: #404040;;
+.themeDarkPopup, .themeDarkCalendarContainer {
+    background: #404040;
 }
 .themeDarkCategory {
     border-bottom: 1px solid #747474;
@@ -37,10 +37,19 @@
     border-radius: 3px;
 }
 .themeDarkGameDescription {
-   background: #434346;
+    background: #434346;
 }
 .themeDarkFooter {
     background: #282828;
+}
+.themeDarkPopupForm {
+    background: #5d5d5d;
+}
+.themeDarkLibraryItself {
+    background: #121212;
+}
+.themeDarkCard-CGD, .themeDarkCalendarLogo {
+    color: white;
 }
 /* 
 .themeBlueFooter {

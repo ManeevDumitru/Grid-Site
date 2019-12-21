@@ -1,7 +1,7 @@
 .themeBlueBody {
     background: #1b2838;
 }
-.themeBlueNav {
+.themeBlueNav, .themeBlueFooter {
     background: #171a21;
 }
 .themeBlueCategory {
@@ -36,12 +36,15 @@
 .themeBlueGameDescription {
     background: #253b53;
 }
-.themeBlueFooter {
-    background: #171a21;
-}
-.themeBlueMiddleFooter {
+.themeBlueMiddleFooter, .themeBlueCalendarSection {
     background: #1a2235;
 }
-.themeBlueCalendarSection {
-    background: #1a2235;
+.themeBluePopupForm {
+    background: #233750;
+}
+.themeBrightPopupForm {
+    background: #5d5d5d;
+}
+.themeBrightLibraryItself, .themeBrightLibrarySearchForm {
+    background: #222222;
 }

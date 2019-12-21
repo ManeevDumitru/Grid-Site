@@ -1,3 +1,9 @@
+.themeBrightPopupForm {
+    background: #5d5d5d;
+}
+.themeBrightLibraryItself, .themeBrightLibrarySearchForm {
+    background: #222222;
+}
 /*.themeBrightBody {
     background:#d8d8d8;
 }*/
