@@ -8,7 +8,7 @@
         height: 24vw;
     }
     .featuredmainshow {
-        height: 32vw;
+        height: 33vw;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -120,8 +120,11 @@
     }
 }
 @media only screen and (max-width: 576px){
-    .featuredmainshow {
+    .featured {
         display: none;
+    }
+    #mobFeatured {
+        display: block;
     }
     .hot-games-container {
         display: grid;

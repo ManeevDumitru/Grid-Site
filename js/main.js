@@ -157,6 +157,7 @@ function buttonSwitchThemeBlue(){
             /* Remove */
         $('.libraryItself').removeClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
+            // Guidelines
         $('.guidelines').removeClass('themeDarkGuidelinesContainer');
         $('.guidelines h3').removeClass('themeDarkGuidelinesLogo');
         $('.guidelines p').removeClass('themeDarkGuidelinesText');
