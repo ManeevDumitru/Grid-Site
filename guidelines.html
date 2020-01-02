@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="img/utility/Log.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/themes/bright.css">
     <link rel="stylesheet" type="text/css" href="css/themes/dark.css">
     <link rel="stylesheet" type="text/css" href="css/themes/blue.css">
@@ -25,27 +26,72 @@
             <div class="inside-header-right">
                 <nav>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                        </li>
+                        <li>
+                            <a href="library.html" class="dropdownButton">Library</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">Calendar</a>
+                        </li>
                         <li>
                             <a href="#" class="dropdownButton">Themes</a>
                             <div class="dropdownMenuThemes">
-                                <a href="#" class="themeBrightTheme">
-                                    Bright
-                                </a>
-                                <a href="#" class="themeDarkTheme">
-                                    Dark
-                                </a>
-                                <a class="themeBlueTheme">
-                                    Blue
-                                </a>
-                            </div></li>
-                        <li>
-                            <a href="index.html" class="dropdownButton">Home</a>
+                                <a href="#" class="themeBrightTheme">Bright</a>
+                                <a href="#" class="themeDarkTheme">Dark</a>
+                                <a class="themeBlueTheme">Blue</a>
+                            </div>
+                        </li>
+                        <li class="dropdownButton">
+                            <a href="#" class="dropdownButton">Account</a>
+                            <div class="dropdownMenuAccount">
+                                <div class="buttonRegister"><a href="register.html" class="regLink">Register</a></div>
+                                <div class="buttonLogin">Sign In</div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
+                <div class="inside-header-right-mob">
+                    <i class="fas fa-bars"></i>
+                    <ul id="ul1Mobile">
+                        <li>
+                            <a href="index.html">Home</a> 
+                        </li>
+                        <li>
+                            <a href="calendar.html">Calendar</a> 
+                        </li>
+                        <li>
+                            <a href="library.html">Library</a> 
+                        </li>
+                        <li>
+                            <a href="#">
+                                Themes
+                            </a>
+                            <ul id="ul2Mobile">
+                                <li class="themeBrightTheme">
+                                    Bright
+                                </li>
+                                <li class="themeDarkTheme">
+                                    Dark
+                                </li>
+                                <li class="themeBlueTheme">
+                                    Blue
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdownButton">Account</a>
+                            <div class="dropdownMenuAccount">
+                                <div class="buttonRegister">
+                                    <a href="register.html" class="regLink">Register</a>
+                                </div>
+                                <div class="buttonLogin">
+                                    Sign In
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>

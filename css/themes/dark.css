@@ -52,13 +52,14 @@
 /* Calendar */
 
 .themeDarkCalendarCard, .themeDarkCalendarLogo {
-    color: #dddddd !important;
+    color: #dddddd;
 }
 
 /* Guidelines */
 
 .themeDarkGuidelinesContainer {
     background: #404040;
+    border-top: 5px solid #a8a8a8 !important;
 }
 .themeDarkGuidelinesLogo {
     color: #fff !important;

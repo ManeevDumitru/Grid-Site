@@ -4,11 +4,12 @@
         grid-template-rows: 1fr;
         grid-template-columns: 2fr 1fr;
     }
-    .news-main, .news-secondary {
-        height: 24vw;
-    }
-    .featuredmainshow {
+    .news-main, .news-secondary, .featuredmainshow {
         height: 33vw;
+    }
+    .sectionForGames {
+        grid-template-columns: repeat(4, 18vw);
+        grid-template-rows: auto;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -48,12 +49,26 @@
         font-size: 18px;
     }
     .new-main-info-text {
-        font-size: 18px;
+        font-size: 14px;
+        line-height: 1 !important;
     }
     .main-preview-button {
         font-size: 16px;
     }
 }
+@media screen and (max-width: 900px) {
+    .inside-header-right nav{
+        display: none;
+    }
+    .inside-header-right-mob {
+        display: block !important;
+    }
+    .sectionForGames {
+        grid-template-columns: repeat(3, 23vw);
+        grid-template-rows: auto;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .main-preview-desc-left, .main-preview-desc-left-black {
         display: none;
@@ -71,6 +86,14 @@
         padding: 0;
     }
     .main-preview-button span {
+        display: none;
+    }
+    .calendarMonthLane ul {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
+    .calendarMonthLane ul li:last-child {
         display: none;
     }
 }
@@ -118,6 +141,10 @@
     .new-main-info-text {
         font-size: 16px;
     }
+    .sectionForGames {
+        grid-template-columns: repeat(2, 30vw);
+        grid-template-rows: auto;
+    }
 }
 @media only screen and (max-width: 576px){
     .featured {
@@ -135,6 +162,9 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
+    }
+    .news-main, .news-secondary {
+        height: 57vw;
     }
     .news-container a .news-main img {
         display: none;
@@ -163,6 +193,28 @@
     .bottomFooter {
         text-align: center;
     }
+    #regSec {
+        margin: 20px auto 86px auto;
+    }
+    .libraryItself {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 570px 1fr;
+    }
+    .sectionForGames {
+        grid-template-columns: repeat(2, 48vw);
+        grid-template-rows: auto;
+    }
+    .cardLibraryGameWrapper {
+        margin: auto;
+    }
+    .sectionForCategories {
+        margin: 0;
+    }
+    .card-GameDescSubtitle {
+        margin: 0;
+    }
+
 }
 @media only screen and (max-width: 400px) {
     .game-product:hover .game-product-price-initial {
@@ -216,5 +268,42 @@
     }
     .game-product-desc-price{
         font-size: 14px;
+    }
+    #ul1Mobile{
+        width: 100%;
+        transform-origin: center;
+    }
+    #ul2Mobile {
+        width: 100%;
+        left: 0;
+        z-index: 3;
+        top: 250px
+    }
+    #ul1Mobile li:nth-child(4) a:hover  + #ul2Mobile{
+        transform: scaleX(0);
+    }
+    #ul1Mobile li:nth-child(4) a:focus  + #ul2Mobile{
+        opacity: 1 !important;
+        transform: scaleX(1);
+    }
+    .guidelines h3 {
+        font-size: 16px;
+    }
+    .guidelines p {
+        font-size: 15px
+    }
+    .guidelines li {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .calendarMonthLane ul {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sectionForGames {
+        grid-template-columns: repeat(2, 49vw);
+        grid-template-rows: auto;
+        grid-row-gap: 25px;
     }
 }

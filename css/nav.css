@@ -1,0 +1,234 @@
+nav {
+    width: 100%;
+    color: #d8d8d8;
+}
+
+nav ul {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(5, 150px);
+    list-style: none;
+    justify-content: right;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+a.regLink {
+    color: black;
+    text-align: center;
+    padding: 0 0;
+}
+
+nav ul li a {
+    color: #d8d8d8;
+    transition: .3s;
+    padding: 16px 30px;
+    position: relative;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #ff1493;
+}
+
+.dropdownButton {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    background: #383838;
+    margin-left: 15px;
+    text-align: center;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
+    line-height: 25px;
+    width: 120px;
+    display: none;
+}
+
+.dropdownMenu a {
+    color: #d8d8d8;
+    display: block;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownMenuAccount {
+    position: absolute;
+    box-sizing: border-box;
+    background: #383838;
+    width: 150px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
+    display: none; 
+}
+
+.dropdownMenuAccount div {
+    color: #282828;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+}
+
+.dropdownMenuAccount:hover {
+    cursor: pointer;
+}
+
+.buttonRegister {
+    text-align: center;
+    background: linear-gradient(0deg, rgba(35, 127, 176, 1) 23%, rgba(0, 183, 213, 1) 97%);
+}
+
+.buttonRegister a:hover {
+    color: black;
+}
+
+.buttonRegister:hover {
+    background: linear-gradient(0deg, rgba(0, 183, 213, 1) 64%, rgba(35, 127, 176, 1) 93%);
+    color: white;
+}
+
+.buttonLogin {
+    background: linear-gradient(0deg, rgba(156, 194, 64, 1) 23%, rgba(182, 226, 74, 1) 97%);
+}
+
+.buttonLogin:hover {
+    background: linear-gradient(0deg, rgba(182, 226, 74, 1) 67%, rgba(156, 194, 64, 1) 91%);
+}
+
+.dropdownMenuThemes {
+    position: absolute;
+    background: #383838;
+    width: 120px;
+    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
+    margin-left: 15px;
+    line-height: 25px;
+    display: none;
+}
+
+.dropdownMenuThemes a:first-child {
+    background: #d8d8d8;
+    color: #282828;
+}
+
+.dropdownMenuThemes a:nth-child(2) {
+    background: #383838;
+    color: #ffffff;
+}
+
+.dropdownMenuThemes a:last-child {
+    background: #1b2838;
+    color: #26a4ed;
+}
+
+.dropdownMenuThemes a {
+    color: inherit;
+    display: block;
+    width: 60px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownButton:hover+.dropdownMenuAccount, 
+.dropdownButton:focus+.dropdownMenuAccount, 
+.dropdownMenuAccount:hover {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.dropdownButton:hover+.dropdownMenuThemes, 
+.dropdownButton:focus+.dropdownMenuThemes, 
+.dropdownButton:hover+.dropdownMenu, 
+.dropdownMenu:hover, .dropdownMenuThemes:hover {
+    display: block;
+}
+
+
+/* HEADER MOB HEADER MOB HEADER MOB HEADER MOB HEADER MOB */
+
+.inside-header-right-mob {
+    color: #dddddd;
+    text-align: right;
+    padding: 0 50px;
+    display: none;
+}
+
+.inside-header-right-mob i {
+    padding: 17px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+}
+
+.inside-header-right-mob ul {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: #282828;
+    box-shadow: 1px 1px 3px #000;
+    width: 150px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 50px) 1fr 50px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .3s;
+}
+
+.inside-header-right-mob i:hover+ul, #ul1Mobile:hover,
+#ul1Mobile li:nth-child(4) a:hover  + ul, #ul2Mobile:hover {
+    opacity: 1 !important;
+    transform: scaleX(1);
+}
+
+.inside-header-right-mob ul li ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 50px);
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    height: 150px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .3s;
+}
+
+#ul1Mobile a {
+    padding: 15px 35px;
+    text-align: center;
+}
+#ul1Mobile li:nth-child(4) a {
+    padding: 15px 48px;
+}
+
+#ul1Mobile .dropdownMenuAccount a {
+    padding: 0 !important;
+}
+
+.inside-header-right-mob ul li ul li {
+    height: 50px;
+}
+
+.inside-header-right-mob ul li ul li:first-child {
+    background: #d8d8d8;
+    color: #282828;
+}
+
+.inside-header-right-mob ul li ul li:nth-child(2) {
+    background: #282828;
+    color: #d8d8d8;
+}
+
+.inside-header-right-mob ul li ul li:last-child {
+    background: #1b2838;
+    color: #26a4ed;
+}

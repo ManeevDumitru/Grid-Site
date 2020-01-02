@@ -1,3 +1,14 @@
+/* Nav */
+
+.themeBlueNav {
+    background: #1b2838;
+    color: #26a4ed;
+}
+.themeBlueMA {
+    background: #1b2838 !important;
+}
+/* Main */
+
 .themeBlueBody {
     background: #1b2838;
 }
@@ -64,5 +75,12 @@
 /* Guidelines */
 
 .themeBlueGuidelinesContainer {
-    background: #25456b;
+    background: #171a21;
+    border-top: 5px solid #417b9c !important;
+}
+.themeBlueGuidelinesLogo {
+    color: #26a4ed !important;
+}
+.themeBlueGuidelinesText {
+    color: #dddddd !important;
 }

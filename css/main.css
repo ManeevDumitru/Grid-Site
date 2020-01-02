@@ -36,6 +36,10 @@ ul {
     list-style: none;
 }
 
+ul li {
+    cursor: pointer;
+}
+
 /* Header */
 
 /* Header */
@@ -92,161 +96,6 @@ a {
 
 .inside-header-right {
     grid-area: 1/2/1/2;
-}
-
-nav {
-    width: 100%;
-    color: #d8d8d8;
-}
-
-nav ul {
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(5, 150px);
-    list-style: none;
-    justify-content: right;
-}
-
-nav ul li {
-    text-align: center;
-}
-
-a.regLink {
-    color: black;
-    text-align: center;
-    padding: 0 0;
-}
-
-nav ul li a {
-    color: #d8d8d8;
-    transition: .3s;
-    padding: 16px 30px;
-    position: relative;
-    width: 100%;
-}
-
-nav ul li a:hover {
-    color: #ff1493;
-}
-
-.dropdownButton {
-    position: relative;
-}
-
-.dropdownMenu {
-    position: absolute;
-    background: #383838;
-    margin-left: 15px;
-    text-align: center;
-    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
-    line-height: 25px;
-    width: 120px;
-    display: none;
-}
-
-.dropdownMenu a {
-    color: #d8d8d8;
-    display: block;
-    /*width: 60px;*/
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.dropdownMenuAccount {
-    position: absolute;
-    box-sizing: border-box;
-    background: #383838;
-    width: 150px;
-    border-radius: 3px;
-    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
-    display: none;
-}
-
-/*.dropdownMenuAccount form {
-    text-align: left;
-    padding: 5px;
-}
-.dropdownMenuAccount form input {
-    background: #444444;
-}*/
-
-.dropdownMenuAccount div {
-    color: #282828;
-    width: 60px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border-radius: 3px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 5px 30px;
-}
-
-.dropdownMenuAccount:hover {
-    cursor: pointer;
-}
-
-.buttonRegister {
-    text-align: center;
-    background: linear-gradient(0deg, rgba(35, 127, 176, 1) 23%, rgba(0, 183, 213, 1) 97%);
-}
-
-.buttonRegister a:hover {
-    color: black;
-}
-
-.buttonRegister:hover {
-    background: linear-gradient(0deg, rgba(0, 183, 213, 1) 64%, rgba(35, 127, 176, 1) 93%);
-    color: white;
-}
-
-.buttonLogin {
-    background: linear-gradient(0deg, rgba(156, 194, 64, 1) 23%, rgba(182, 226, 74, 1) 97%);
-}
-
-.buttonLogin:hover {
-    background: linear-gradient(0deg, rgba(182, 226, 74, 1) 67%, rgba(156, 194, 64, 1) 91%);
-}
-
-.dropdownMenuThemes {
-    position: absolute;
-    background: #383838;
-    width: 120px;
-    box-shadow: 0 0 3px rgb(0, 0, 0, .7);
-    margin-left: 15px;
-    display: none;
-    line-height: 25px;
-}
-
-.dropdownMenuThemes a:first-child {
-    background: #d8d8d8;
-    color: #282828;
-}
-
-.dropdownMenuThemes a:nth-child(2) {
-    background: #383838;
-    color: #ffffff;
-}
-
-.dropdownMenuThemes a:last-child {
-    background: #1b2838;
-    color: #26a4ed;
-}
-
-.dropdownMenuThemes a {
-    color: inherit;
-    display: block;
-    width: 60px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.dropdownButton:hover+.dropdownMenuAccount, .dropdownButton:focus+.dropdownMenuAccount, .dropdownMenuAccount:hover {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-}
-
-.dropdownButton:hover+.dropdownMenuThemes, .dropdownButton:focus+.dropdownMenuThemes, .dropdownButton:hover+.dropdownMenu, .dropdownMenu:hover, .dropdownMenuThemes:hover {
-    display: block;
 }
 
 /*Section*/
@@ -1115,6 +964,7 @@ input[name="inputLogin"], input[name="inputPassword"] {
 .librarySection {
     background: #121212;
     margin-top: 75px;
+    overflow: hidden;
 }
 
 /* Form */
@@ -1270,6 +1120,7 @@ a:hover .cardLibraryGameLogo {
 .card-GameDesc {
     color: white;
     position: relative;
+    display: grid;
 }
 
 .card-GameDescTitle {
@@ -1307,6 +1158,10 @@ a:hover .cardLibraryGameLogo {
 .card-GameDescPrice {
     text-align: left;
     font-weight: 500;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
 
 .card-PriceDiscountValue {
@@ -1320,6 +1175,7 @@ a:hover .cardLibraryGameLogo {
     text-decoration: line-through;
     color: #fd5454;
     margin-right: 5px;
+    line-height: 25px;
 }
 
 /* -------------- -------------- -------------- -------------- --------------*/
@@ -1476,11 +1332,6 @@ a:hover .cardLibraryGameLogo {
 /* register.html */
 
 /* register.html */
-
-.bodyRegister {
-    overflow: hidden;
-    width: 100%;
-}
 
 .registrationFormContainer {
     max-width: 500px;

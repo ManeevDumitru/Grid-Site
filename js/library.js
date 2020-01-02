@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     buttonTopFunction();
     buttonSwitchThemeDark();
     buttonSwitchThemeBright();
@@ -43,6 +43,7 @@ function buttonSwitchThemeDark(){
         $('.library-games-button-container').addClass('themeDarkSection');
         $('.news').addClass('themeDarkSection');
         $('body').removeClass('themeBlueBody');
+        /////
         $('.categoryname').removeClass('themeBlueSection');
         $('.recommended').removeClass('themeBlueSection');
         $('.featured').removeClass('themeBlueSection');
@@ -74,4 +75,4 @@ function buttonTopFunction(){
     $('.buttonUp').click(function(){
         window.scrollTo(0,0); 
     });
-}
+}*/

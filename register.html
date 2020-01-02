@@ -6,12 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
     <link rel="shortcut icon" type="image/png" href="img/utility/Log.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/themes/bright.css">
     <link rel="stylesheet" type="text/css" href="css/themes/dark.css">
     <link rel="stylesheet" type="text/css" href="css/themes/blue.css">
@@ -29,10 +31,9 @@
                 </div>
             </div>
             <div class="inside-header-right">
-                <nav class="inside-header-nav">
+                <nav>
                     <ul>
                         <li>
-                            <a href="index.html" class="dropdownButton">Home</a>
                         </li>
                         <li>
                             <a href="library.html" class="dropdownButton">Library</a>
@@ -43,15 +44,9 @@
                         <li>
                             <a href="#" class="dropdownButton">Themes</a>
                             <div class="dropdownMenuThemes">
-                                <a href="#" class="themeBrightTheme">
-                                    Bright
-                                </a>
-                                <a href="#" class="themeDarkTheme">
-                                    Dark
-                                </a>
-                                <a class="themeBlueTheme">
-                                    Blue
-                                </a>
+                                <a href="#" class="themeBrightTheme">Bright</a>
+                                <a href="#" class="themeDarkTheme">Dark</a>
+                                <a class="themeBlueTheme">Blue</a>
                             </div>
                         </li>
                         <li class="dropdownButton">
@@ -63,11 +58,52 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="inside-header-right-mob">
+                    <i class="fas fa-bars"></i>
+                    <ul id="ul1Mobile">
+                        <li>
+                            <a href="index.html">Home</a> 
+                        </li>
+                        <li>
+                            <a href="calendar.html">Calendar</a> 
+                        </li>
+                        <li>
+                            <a href="library.html">Library</a> 
+                        </li>
+                        <li>
+                            <a href="#">
+                                Themes
+                            </a>
+                            <ul id="ul2Mobile">
+                                <li class="themeBrightTheme">
+                                    Bright
+                                </li>
+                                <li class="themeDarkTheme">
+                                    Dark
+                                </li>
+                                <li class="themeBlueTheme">
+                                    Blue
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdownButton">Account</a>
+                            <div class="dropdownMenuAccount">
+                                <div class="buttonRegister">
+                                    <a href="register.html" class="regLink">Register</a>
+                                </div>
+                                <div class="buttonLogin">
+                                    Sign In
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
-    <section>
+    <section id="regSec">
         <h1>If u read this... GJ</h1>
 
         <div class="registrationFormContainer">
@@ -109,6 +145,17 @@
                             <option value="18">8</option>
                             <option value="19">9</option>
                             <option value="20">10</option>
+                            <option value="21">1</option>
+                            <option value="22">2</option>
+                            <option value="23">3</option>
+                            <option value="24">4</option>
+                            <option value="25">5</option>
+                            <option value="26">6</option>
+                            <option value="27">7</option>
+                            <option value="28">8</option>
+                            <option value="29">9</option>
+                            <option value="30">10</option>
+                            <option value="31">10</option>
                         </select>
                         <select class="Month" form name="inputBirthMonth">
                             <option value="Jan">January</option>
@@ -175,7 +222,7 @@
                     </div>
                 </div>
                 <div class="registrationRowForConfirm">
-                    <input type="submit" method value="Confirm" formmethod="GET">
+                    <input type="submit" value="Confirm" formmethod="GET">
                     <div class="fieldForGuidelines">
                         By confirming you accept the <a href="guidelines.html">following guidelines</a>
                     </div>
