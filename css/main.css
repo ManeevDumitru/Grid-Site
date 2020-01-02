@@ -42,18 +42,6 @@ ul li {
 
 /* Header */
 
-/* Header */
-
-/* Header */
-
-/* Header */
-
-/* Header */
-
-/* Header */
-
-/* Header */
-
 header {
     background: #282828;
     line-height: 50px;
@@ -102,32 +90,10 @@ a {
 
 /*Section*/
 
-/*Section*/
-
-/*Section*/
-
-/*Section*/
-
-/*Section*/
-
-/*Section*/
-
-/*Section*/
-
 section {
     max-width: 1200px;
     margin: 20px auto 20px auto;
 }
-
-/*Featured*/
-
-/*Featured*/
-
-/*Featured*/
-
-/*Featured*/
-
-/*Featured*/
 
 /*Featured*/
 
@@ -246,16 +212,6 @@ section {
 
 /*Recommended*/
 
-/*Recommended*/
-
-/*Recommended*/
-
-/*Recommended*/
-
-/*Recommended*/
-
-/*Recommended*/
-
 .recommended {
     width: 100%;
 }
@@ -349,20 +305,6 @@ section {
 
 /*Library*/
 
-/*Library*/
-
-/*Library*/
-
-/*Library*/
-
-/*Library*/
-
-/*Library*/
-
-/*Library*/
-
-/*Library*/
-
 .library {
     width: 100%;
     margin: 0 0 15px 0;
@@ -378,12 +320,6 @@ section {
 
 /* Library Games Left */
 
-/* Library Games Left */
-
-/* Library Games Left */
-
-/* Library Games Left */
-
 .game-product-container {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
@@ -391,16 +327,7 @@ section {
 
 /* Game Product */
 
-/* Game Product */
-
-/* Game Product */
-
-/* Game Product */
-
-/* Game Product */
-
 .game-product {
-    /*color: #d8d8d8;*/
     color: #282828;
     padding: 10px;
     display: grid;
@@ -424,12 +351,6 @@ section {
     height: 100%;
     width: 100%;
 }
-
-/* Description of the game */
-
-/* Description of the game */
-
-/* Description of the game */
 
 /* Description of the game */
 
@@ -551,12 +472,6 @@ section {
 
 /* Library Games Right */
 
-/* Library Games Right */
-
-/* Library Games Right */
-
-/* Library Games Right */
-
 .hot-games-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -604,21 +519,6 @@ section {
 
 /* News */
 
-/* News */
-
-/* News */
-
-/* News */
-
-/* News */
-
-/* News */
-
-/* News */
-
-/* News */
-
-/* News */
 
 .news-container {
     display: grid;
@@ -672,14 +572,6 @@ section {
 
 /* Button to top */
 
-/* Button to top */
-
-/* Button to top */
-
-/* Button to top */
-
-/* Button to top */
-
 .buttonUp {
     z-index: 99;
     background: #282828;
@@ -700,14 +592,6 @@ section {
 .buttonup:active {
     color: #5ad8ee;
 }
-
-/* Switch Theme */
-
-/* Switch Theme */
-
-/* Switch Theme*/
-
-/* Switch Theme */
 
 /* Switch Theme */
 
@@ -758,12 +642,6 @@ section {
 
 /* Black Background */
 
-/* Black Background */
-
-/* Black Background */
-
-/* Black Background */
-
 .blackBackground {
     position: fixed;
     top: 0;
@@ -783,16 +661,6 @@ section {
     z-index: 4;
     background: rgb(0, 0, 0, .5);
 }
-
-/* popup */
-
-/* popup */
-
-/* popup */
-
-/* popup */
-
-/* popup */
 
 /* popup */
 
@@ -943,20 +811,6 @@ input[name="inputLogin"], input[name="inputPassword"] {
 
 /* -------------- -------------- -------------- -------------- -------------- */
 
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* library.thml */
-
-/* library.thml */
-
-/* library.thml */
-
 /* library.thml */
 
 .bodyLibrary {
@@ -968,18 +822,6 @@ input[name="inputLogin"], input[name="inputPassword"] {
     margin-top: 75px;
     overflow: hidden;
 }
-
-/* Form */
-
-/* Form */
-
-/* Form */
-
-/* Form */
-
-/* Form */
-
-/* Form */
 
 /* Form */
 
@@ -1000,12 +842,6 @@ input[name="inputLogin"], input[name="inputPassword"] {
     background-repeat: no-repeat;
     width: 200px;
 }
-
-/* Library Itself */
-
-/* Library Itself */
-
-/* Library Itself */
 
 /* Library Itself */
 
@@ -1070,10 +906,6 @@ input[name="inputLogin"], input[name="inputPassword"] {
 .categoriesContainer input:checked~.customCheckbox:after, .studiosContainer input:checked~.customCheckbox:after {
     display: block;
 }
-
-/* Section for games */
-
-/* Section for games */
 
 /* Section for games */
 
@@ -1181,21 +1013,7 @@ a:hover .cardLibraryGameLogo {
 
 /* -------------- -------------- -------------- -------------- --------------*/
 
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* Calendar.html */
-
-/* Calendar.html */
-
-/* Calendar.html */
-
-/* Calendar.html */
+/* Calendar.html Calendar.html Calendar.html Calendar.html Calendar.html Calendar.html */
 
 .sectionForCalendar {
     max-width: 1000px;
@@ -1318,22 +1136,7 @@ a:hover .cardLibraryGameLogo {
 
 /* -------------- -------------- -------------- -------------- --------------*/
 
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
 /* register.html */
-
-/* register.html */
-
-/* register.html */
-
-/* register.html */
-
 
 .registrationFormContainer {
     max-width: 500px;
@@ -1481,20 +1284,6 @@ a:hover .cardLibraryGameLogo {
 }
 
 /* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* -------------- -------------- -------------- -------------- --------------*/
-
-/* guidelines.html */
-
-/* guidelines.html */
-
-/* guidelines.html */
 
 /* guidelines.html */
 
