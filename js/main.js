@@ -34,12 +34,6 @@ function popupOpenClose() {
     });
 }
 
-function localDate() {
-    let currentDate = new Date().toLocaleDateString()
-
-    console.log(currentDate);
-}   
-
 function changeMonth() {
     $('.DEC').hide();
     $('.monthCurrent').click(function(){
@@ -78,45 +72,31 @@ function changeMonth() {
 function buttonSwitchThemeBright(){
     $('.themeBrightTheme').click(function(){
             /* Remove Dark */ 
-        $('body').removeClass('themeDarkBody');
-        $('header').removeClass('themeDarkNav');
-        $('.categoryname').removeClass('themeDarkCategory');
-        $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeDarkSection');
-        $('.card-recommendedGameDescription').removeClass('themeDarkGameDescription');
-        $('.game-product').removeClass('themeDarkGameProduct');
-        $('.show-more-button').removeClass('themeDarkShowMoreButton');
-        $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
-        $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
-        $('.topFooter,.bottomFooter').removeClass('themeDarkFooter');
+        $('body').removeClass('themeDarkBody').removeClass('themeBlueBody');
+        $('header').removeClass('themeDarkNav').removeClass('themeBlueNav');
+        $('.categoryname').removeClass('themeDarkCategory').removeClass('themeBlueCategory');
+        $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeDarkSection').removeClass('themeBlueSection');
+        $('.card-recommendedGameDescription').removeClass('themeDarkGameDescription').removeClass('themeBlueGameDescription');
+        $('.game-product').removeClass('themeDarkGameProduct').removeClass('themeBlueGameProduct');
+        $('.show-more-button').removeClass('themeDarkShowMoreButton').removeClass('themeBlueShowMoreButton');
+        $('.hot-games-footer').removeClass('themeDarkLibraryBottom').removeClass('themeBlueLibraryBottom');
+        $('.library-games-button-container').removeClass('themeDarkLibraryBottom').removeClass('themeBlueLibraryBottom');
+        $('.topFooter,.bottomFooter').removeClass('themeDarkFooter').removeClass('themeBlueFooter');
         // // // // Library // // //
         $('.libraryItself').addClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').addClass('themeBrightLibrarySearchForm');
         ////// Calendar /////
-        $('.calendarLogo').removeClass('themeDarkCalendarLogo');
-        $('.calendarContainer').removeClass('themeDarkCalendarContainer');
-        $('.card-CalendarGameDesc').removeClass('themeDarkCalendarCard');
+        $('.calendarLogo').removeClass('themeDarkCalendarLogo').removeClass('themeBlueCalendarLogo');
+        $('.calendarContainer').removeClass('themeDarkCalendarContainer').removeClass('themeBlueCalendarContainer');
+        $('.card-CalendarGameDesc').removeClass('themeDarkCalendarCard').removeClass('themeBlueCalendarCard');
         ///// Guidelines /////
-        $('.guidelines').removeClass('themeDarkGuidelinesContainer');
+        $('.guidelines').removeClass('themeDarkGuidelinesContainer').removeClass('themeBlueGuidelinesContainer');
         $('.guidelines h3').removeClass('themeDarkGuidelinesLogo');
         $('.guidelines p').removeClass('themeDarkGuidelinesText');
         $('.guidelines li').removeClass('themeDarkGuidelinesText');
             /* Remove Blue */
-        $('body').removeClass('themeBlueBody');
-        $('header').removeClass('themeBlueNav');
         $('.popupLoginForm').removeClass('themeBluePopupForm');
-        $('.categoryname').removeClass('themeBlueCategory');
-        $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeBlueSection');
-        $('.card-recommendedGameDescription').removeClass('themeBlueGameDescription');
-        $('.game-product').removeClass('themeBlueGameProduct');
-        $('.show-more-button').removeClass('themeBlueShowMoreButton');
-        $('.hot-games-footer').removeClass('themeBlueLibraryBottom');
-        $('.library-games-button-container').removeClass('themeBlueLibraryBottom');
         $('.middleFooter').removeClass('themeBlueMiddleFooter');
-        $('.topFooter,.bottomFooter').removeClass('themeBlueFooter');
-        ///// Calendar /////
-        $('.calendarLogo').removeClass('themeBlueCalendarLogo');
-        $('.calendarContainer').removeClass('themeBlueCalendarContainer');
-        $('.card-CalendarGameDesc').removeClass('themeBlueCalendarCard');
         //// Guidelines ////
         
     });
@@ -125,47 +105,31 @@ function buttonSwitchThemeBright(){
 function buttonSwitchThemeDark(){
     $('.themeDarkTheme').click(function(){
             /* Add */
-        $('body').addClass('themeDarkBody');
-        $('header').addClass('themeDarkNav');
-        $('.categoryname').addClass('themeDarkCategory');
-        $('.featured, .recommended, .library-games-left, .library-games-right, .news').addClass('themeDarkSection');
-        $('.card-recommendedGameDescription').addClass('themeDarkGameDescription');
-        $('.game-product').addClass('themeDarkGameProduct');
-        $('.show-more-button').addClass('themeDarkShowMoreButton');
-        $('.hot-games-footer').addClass('themeDarkLibraryBottom');
-        $('.library-games-button-container').addClass('themeDarkLibraryBottom');
-        $('.topFooter,.bottomFooter').addClass('themeDarkFooter');
+        $('body').addClass('themeDarkBody').removeClass('themeBlueBody');
+        $('header').addClass('themeDarkNav').removeClass('themeBlueNav');
+        $('.categoryname').addClass('themeDarkCategory').removeClass('themeBlueCategory');
+        $('.featured, .recommended, .library-games-left, .library-games-right, .news').addClass('themeDarkSection').removeClass('themeBlueSection');
+        $('.card-recommendedGameDescription').addClass('themeDarkGameDescription').removeClass('themeBlueGameDescription');
+        $('.game-product').addClass('themeDarkGameProduct').removeClass('themeBlueGameProduct');
+        $('.show-more-button').addClass('themeDarkShowMoreButton').removeClass('themeBlueShowMoreButton');
+        $('.hot-games-footer').addClass('themeDarkLibraryBottom').removeClass('themeBlueLibraryBottom');
+        $('.library-games-button-container').addClass('themeDarkLibraryBottom').removeClass('themeBlueLibraryBottom');
+        $('.topFooter,.bottomFooter').addClass('themeDarkFooter').removeClass('themeBlueFooter');
         ///// Calendar /////
-        $('.calendarLogo').addClass('themeDarkCalendarLogo');
-        $('.calendarContainer').addClass('themeDarkCalendarContainer');
-        $('.card-CalendarGameDesc').addClass('themeDarkCalendarCard');
+        $('.calendarLogo').addClass('themeDarkCalendarLogo').removeClass('themeBlueCalendarLogo');
+        $('.calendarContainer').addClass('themeDarkCalendarContainer').removeClass('themeBlueCalendarContainer');
+        $('.card-CalendarGameDesc').addClass('themeDarkCalendarCard').removeClass('themeBlueCalendarCard');
         //////Guidelines ////
-        $('.guidelines').addClass('themeDarkGuidelinesContainer');
+        $('.guidelines').addClass('themeDarkGuidelinesContainer').removeClass('themeBlueGuidelinesContainer');
         $('.guidelines h3').addClass('themeDarkGuidelinesLogo');
         $('.guidelines p').addClass('themeDarkGuidelinesText');
         $('.guidelines li').addClass('themeDarkGuidelinesText');
             /* Remove */
-        $('body').removeClass('themeBlueBody');
-        $('header').removeClass('themeBlueNav');
         $('.popupLoginForm').removeClass('themeBluePopupForm');
-        $('.categoryname').removeClass('themeBlueCategory');
-        $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeBlueSection');
-        $('.card-recommendedGameDescription').removeClass('themeBlueGameDescription');
-        $('.game-product').removeClass('themeBlueGameProduct');
-        $('.show-more-button').removeClass('themeBlueShowMoreButton');
-        $('.hot-games-footer').removeClass('themeBlueLibraryBottom');
-        $('.library-games-button-container').removeClass('themeBlueLibraryBottom');
         $('.middleFooter').removeClass('themeBlueMiddleFooter');
-        $('.topFooter,.bottomFooter').removeClass('themeBlueFooter');
         ////// Library /////
         $('.libraryItself').removeClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
-        ////// Calendar ////
-        $('.calendarLogo').removeClass('themeBlueCalendarLogo');
-        $('.calendarContainer').removeClass('themeBlueCalendarContainer');
-        $('.card-CalendarGameDesc').removeClass('themeBlueCalendarCard');
-        ///// Guidelines/////
-        $('.guidelines').removeClass('themeBlueGuidelinesContainer');
         
     });
 }
@@ -173,42 +137,26 @@ function buttonSwitchThemeDark(){
 function buttonSwitchThemeBlue(){
     $('.themeBlueTheme').click(function(){
             /* Add */ 
-        $('body').addClass('themeBlueBody');
-        $('header').addClass('themeBlueNav');
+        $('body').addClass('themeBlueBody').removeClass('themeDarkBody');
+        $('header').addClass('themeBlueNav').removeClass('themeDarkNav');
         $('.popupLoginForm').addClass('themeBluePopupForm');
-        $('.categoryname').addClass('themeBlueCategory');
+        $('.categoryname').addClass('themeBlueCategory').removeClass('themeDarkCategory');
         $('.featured, .recommended, .library-games-left, .library-games-right, .news').addClass('themeBlueSection');
-        $('.card-recommendedGameDescription').addClass('themeBlueGameDescription');
-        $('.game-product').addClass('themeBlueGameProduct');
-        $('.show-more-button').addClass('themeBlueShowMoreButton');
-        $('.hot-games-footer').addClass('themeBlueLibraryBottom');
-        $('.library-games-button-container').addClass('themeBlueLibraryBottom');
+        $('.card-recommendedGameDescription').addClass('themeBlueGameDescription').removeClass('themeDarkGameDescription').removeClass('themeDarkSection');
+        $('.game-product').addClass('themeBlueGameProduct').removeClass('themeDarkGameProduct');
+        $('.show-more-button').addClass('themeBlueShowMoreButton').removeClass('themeDarkShowMoreButton');
+        $('.hot-games-footer').addClass('themeBlueLibraryBottom').removeClass('themeDarkLibraryBottom');
+            // Library
+        $('.library-games-button-container').addClass('themeBlueLibraryBottom').removeClass('themeDarkLibraryBottom');
         $('.middleFooter').addClass('themeBlueMiddleFooter');
-        $('.topFooter,.bottomFooter').addClass('themeBlueFooter');
-        /* Calendar */
-        $('.calendarLogo').addClass('themeBlueCalendarLogo');
-        $('.calendarContainer').addClass('themeBlueCalendarContainer');
-        $('.card-CalendarGameDesc').addClass('themeBlueCalendarCard');
+        $('.topFooter,.bottomFooter').addClass('themeBlueFooter').removeClass('themeDarkFooter');
+            // Calendar
+        $('.calendarLogo').addClass('themeBlueCalendarLogo').removeClass('themeDarkCalendarLogo');
+        $('.calendarContainer').addClass('themeBlueCalendarContainer').removeClass('themeDarkCalendarContainer');
+        $('.card-CalendarGameDesc').addClass('themeBlueCalendarCard').removeClass('themeDarkCalendarCard');
             /* Remove */
-        $('body').removeClass('themeDarkBody');
-        $('header').removeClass('themeDarkNav');
-        $('.categoryname').removeClass('themeDarkCategory');
-        $('.card-recommendedGameDescription').removeClass('themeDarkGameDescription');
-        $('.featured, .recommended, .library-games-left, .library-games-right, .news').removeClass('themeDarkSection');
-        $('.game-product').removeClass('themeDarkGameProduct');
-        $('.show-more-button').removeClass('themeDarkShowMoreButton');
-        $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
-        $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
-        $('.topFooter,.bottomFooter').removeClass('themeDarkFooter');
-        //////////
         $('.libraryItself').removeClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
-        //////////
-        $('.calendarLogo').removeClass('themeDarkCalendarLogo');
-        $('.calendarContainer').removeClass('themeDarkCalendarContainer');
-        $('.card-CalendarGameDesc').removeClass('themeDarkCalendarCard');
-        //////////
-        $('.guidelines').removeClass('themeDarkGuidelinesContainer');
         $('.guidelines').removeClass('themeDarkGuidelinesContainer');
         $('.guidelines h3').removeClass('themeDarkGuidelinesLogo');
         $('.guidelines p').removeClass('themeDarkGuidelinesText');
@@ -307,16 +255,12 @@ function sliderMultipleItems(){
 	});
 }
 
-function videoVolume() {
-    $('#video1').prop("volume", 0.1);
-}
-
 /* Category Checkboxes */    
 
 function handleCategoryFilter() {   
     $('input[name="categoryCheckbox"]').click(function(){
         $('.sectionForGames a').addClass('hide');
-        $('.categoriesContainer input').each(function(index){
+        $('.categoriesContainer input').each(function(){
             if($(this).prop('checked')){     
                 $('.' + $(this).attr('id')).parent().closest('a').removeClass('hide');
                 $(this).parent().closest('li').css({
@@ -328,7 +272,7 @@ function handleCategoryFilter() {
                 });
             }
         }); 
-        $('.studiosContainer input').each(function(index){
+        $('.studiosContainer input').each(function(){
             if($(this).prop('checked')){     
                 $('.' + $(this).attr('id')).parent().removeClass('hide');
                 $(this).parent().closest('li').css({
@@ -346,7 +290,7 @@ function handleCategoryFilter() {
 
 //
 
-function preview_image(event) 
+/*function preview_image(event)
 {
     var reader = new FileReader();
     reader.onload = function()
@@ -355,7 +299,7 @@ function preview_image(event)
     output.src = reader.result;
 }
     reader.readAsDataURL(event.target.files[0]);
-}
+}*/
 
 
 
