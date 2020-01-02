@@ -7,3 +7,9 @@
 /*.themeBrightBody {
     background:#d8d8d8;
 }*/
+
+/* Guidelines */
+
+.themeBrightGuidelinesContainer {
+    background: #16202d !important;
+}

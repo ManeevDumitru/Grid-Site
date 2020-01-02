@@ -5,7 +5,7 @@
     background: #282828;
 }
 .themeDarkPopup, .themeDarkCalendarContainer {
-    background: #404040;
+    background: #404040 !important;
 }
 .themeDarkCategory {
     border-bottom: 1px solid #747474;
@@ -15,11 +15,11 @@
 }
 .themeDarkSection {
     background: #282828;
-    color:#ffffff;
+    color:#dddddd;
     border-radius: 3px;
 }
 .themeDarkGameProduct {
-    color:#ffffff;
+    color:#dddddd;
     box-shadow: 0 1px 0 #474747;
 }
 .themeDarkGameProduct:hover {
@@ -48,10 +48,21 @@
 .themeDarkLibraryItself {
     background: #121212;
 }
-.themeDarkCard-CGD, .themeDarkCalendarLogo {
-    color: white;
+
+/* Calendar */
+
+.themeDarkCalendarCard, .themeDarkCalendarLogo {
+    color: #dddddd !important;
 }
-/* 
-.themeBlueFooter {
-    background: #171a21;
-} */
+
+/* Guidelines */
+
+.themeDarkGuidelinesContainer {
+    background: #404040;
+}
+.themeDarkGuidelinesLogo {
+    color: #fff !important;
+}
+.themeDarkGuidelinesText {
+    color: #dddddd !important;
+}

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     sliderMainSlider();
     sliderMultipleItems();
     buttonWorkInProgress();
@@ -12,30 +12,30 @@ $(document).ready(function(){
     handleCategoryFilter();
 });
 
-function buttonWorkInProgress(){
-    $('.work-in-progress').click(function(){
-    $(this).hide();
-    $('.blackBackground').hide();
-  });
-}
-
-function buttonTopFunction(){
-    $('.buttonUp').click(function(){
-        window.scrollTo(0,0); 
+function buttonWorkInProgress() {
+    $('.work-in-progress').click(function () {
+        $(this).hide();
+        $('.blackBackground').hide();
     });
 }
 
-function buttonNotYetImplemented(){
-    $('.not-yet-implemented').click(function(){
+function buttonTopFunction() {
+    $('.buttonUp').click(function () {
+        window.scrollTo(0, 0);
+    });
+}
+
+function buttonNotYetImplemented() {
+    $('.not-yet-implemented').click(function () {
         alert('Not Yet Implemented');
     });
 }
 
-/* Themes */ /* Themes */ /* Themes */ /* Themes */ /* Themes */ /* Themes */ 
+/* Themes */ /* Themes */ /* Themes */ /* Themes */ /* Themes */ /* Themes */
 
-function buttonSwitchThemeBright(){
-    $('.themeBrightTheme').click(function(){
-            /* Remove Dark */ 
+function buttonSwitchThemeBright() {
+    $('.themeBrightTheme').click(function () {
+        /* Remove Dark */
         $('body').removeClass('themeDarkBody');
         $('header').removeClass('themeDarkNav');
         $('.categoryname').removeClass('themeDarkCategory');
@@ -50,7 +50,7 @@ function buttonSwitchThemeBright(){
         $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
         $('.news').removeClass('themeDarkSection');
         $('footer').removeClass('themeDarkFooter');
-            /* Remove Blue */
+        /* Remove Blue */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
         $('.categoryname').removeClass('themeBlueCategory');
@@ -68,9 +68,9 @@ function buttonSwitchThemeBright(){
     });
 }
 
-function buttonSwitchThemeDark(){
-    $('.themeDarkTheme').click(function(){
-            /* Add */
+function buttonSwitchThemeDark() {
+    $('.themeDarkTheme').click(function () {
+        /* Add */
         $('body').addClass('themeDarkBody');
         $('header').addClass('themeDarkNav');
         $('.categoryname').addClass('themeDarkCategory');
@@ -85,7 +85,7 @@ function buttonSwitchThemeDark(){
         $('.library-games-button-container').addClass('themeDarkLibraryBottom');
         $('.news').addClass('themeDarkSection');
         $('footer').addClass('themeDarkFooter');
-            /* Remove */
+        /* Remove */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
         $('.categoryname').removeClass('themeBlueCategory');
@@ -103,44 +103,29 @@ function buttonSwitchThemeDark(){
     });
 }
 
-function buttonSwitchThemeBlue(){
-    $('.themeBlueTheme').click(function(){
-            /* Add */ 
-        $('body').addClass('themeBlueBody');
-        $('header').addClass('themeBlueNav');
-        $('.categoryname').addClass('themeBlueCategory');
-        $('.recommended').addClass('themeBlueSection');
-        $('.card-recommendedGameDescription').addClass('themeBlueGameDescription');
-        $('.featured').addClass('themeBlueSection');
-        $('.library-games-left').addClass('themeBlueSection');
-        $('.game-product').addClass('themeBlueGameProduct');
-        $('.show-more-button').addClass('themeBlueShowMoreButton');
-        $('.library-games-right').addClass('themeBlueSection');
-        $('.hot-games-footer').addClass('themeBlueLibraryBottom');
-        $('.library-games-button-container').addClass('themeBlueLibraryBottom');
-        $('.news').addClass('themeBlueSection');
-        $('.footer').addClass('themeBlueFooter');
-            /* Remove */
-        $('body').removeClass('themeDarkBody');
-        $('header').removeClass('themeDarkNav');
-        $('.categoryname').removeClass('themeDarkCategory');
-        $('.recommended').removeClass('themeDarkSection');
-        $('.card-recommendedGameDescription').removeClass('themeDarkGameDescription');
-        $('.featured').removeClass('themeDarkSection');
-        $('.library-games-left').removeClass('themeDarkSection');
-        $('.game-product').removeClass('themeDarkGameProduct');
-        $('.show-more-button').removeClass('themeDarkShowMoreButton');
-        $('.library-games-right').removeClass('themeDarkSection');
-        $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
-        $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
-        $('.news').removeClass('themeDarkSection');
-        $('footer').removeClass('themeDarkFooter');
+function buttonSwitchThemeBlue() {
+    $('.themeBlueTheme').click(function () {
+        /* Add */
+        $('body').addClass('themeBlueBody').removeClass('themeDarkBody');
+        $('header').addClass('themeBlueNav').removeClass('themeDarkNav');
+        $('.categoryname').addClass('themeBlueCategory').removeClass('themeDarkCategory');
+        $('.recommended').addClass('themeBlueSection').removeClass('themeDarkSection');
+        $('.card-recommendedGameDescription').addClass('themeBlueGameDescription').removeClass('themeDarkGameDescription');
+        $('.featured').addClass('themeBlueSection').removeClass('themeDarkSection');
+        $('.library-games-left').addClass('themeBlueSection').removeClass('themeDarkSection');
+        $('.game-product').addClass('themeBlueGameProduct').removeClass('themeDarkGameProduct');
+        $('.show-more-button').addClass('themeBlueShowMoreButton').removeClass('themeDarkShowMoreButton');
+        $('.library-games-right').addClass('themeBlueSection').removeClass('themeDarkSection');
+        $('.hot-games-footer').addClass('themeBlueLibraryBottom').removeClass('themeDarkLibraryBottom');
+        $('.library-games-button-container').addClass('themeBlueLibraryBottom').removeClass('themeDarkLibraryBottom');
+        $('.news').addClass('themeBlueSection').removeClass('themeDarkSection');
+        $('.footer').addClass('themeBlueFooter').removeClass('themeDarkFooter');
     });
 }
 
-/* Main Slider */ /* Main Slider */ /* Main Slider */ /* Main Slider */ 
+/* Main Slider */ /* Main Slider */ /* Main Slider */ /* Main Slider */
 
-function sliderMainSlider(){
+function sliderMainSlider() {
     $('.main-slider').slick({
         dots: true,
         arrows: false,
@@ -149,37 +134,37 @@ function sliderMainSlider(){
         pauseOnDotsHover: true,
         autoplaySpeed: 7500,
         responsive: [
-          {
-          breakpoint: 992,
-          settings: {
-            slidesToScroll: 1,
-            slidesToShow: 1
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToScroll: 1,
+                    slidesToShow: 1
+                }
             }
-          },
-          {
-            breakpoint: 800,
-            settings: {
-              slidesToScroll: 1,
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 520,
-            settings: {
-              slidesToScroll: 1,
-              slidesToShow: 1
-            }
-          }
         ]
-      });
+    });
 }
 
 
 /* Slider Multiple Items */ /* Slider Multiple Items */ /* Slider Multiple Items */
 
-function sliderMultipleItems(){
+function sliderMultipleItems() {
     $('.multiple-items').slick({
-	    dots: true,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -189,158 +174,131 @@ function sliderMultipleItems(){
         pauseOnDotsHover: true,
         autoplaySpeed: 5000,
         responsive: [
-        {
-            breakpoint: 1100,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 830,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             }
-        },
-        {
-            breakpoint: 830,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 550,
-            settings: {
-                sildesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-        }
-        }
-    ]
-	});
+        ]
+    });
 }
 
 function videoVolume() {
     $('#video1').prop("volume", 0.1);
 }
 
-/* Category Checkboxes */    
+/* Category Checkboxes */
 
-function handleCategoryFilter() {   
-    $('input[name="categoryCheckbox"]').click(function(){
+function handleCategoryFilter() {
+    $('input[name="categoryCheckbox"]').click(function () {
         $('.sectionForGames a').addClass('hide');
-        $('.categoriesContainer input').each(function(index){
-            if($(this).prop('checked')){     
+        $('.categoriesContainer input').each(function (index) {
+            if ($(this).prop('checked')) {
                 $('.' + $(this).attr('id')).parent().removeClass('hide');
                 $('this').parent().closest('li').css({
-                    'background':'white'
-                });      
-            };
-        });                    
+                    'background': 'white'
+                });
+            }
+        });
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Meme  */
 
-function playPause() { 
-    
-    var myVideo = document.getElementById("video1"); 
+function playPause() {
 
-  if 
-    (myVideo.paused) {
-    myVideo.play();
-    function showVideo() {
-        $('.background').css({
-            'transform': 'translate(0,0)'
-        });
+    var myVideo = document.getElementById("video1");
+
+    if
+        (myVideo.paused) {
+        myVideo.play();
+        function showVideo() {
+            $('.background').css({
+                'transform': 'translate(0,0)'
+            });
+        }
     }
-  }
-  else 
-    myVideo.pause(); 
-  
+    else
+        myVideo.pause();
+
     setTimeout(showVideo())
 }
 
-function playMeme() { 
-    
-    var Audio = document.getElementById("butm"); 
+function playMeme() {
 
- if 
-    (Audio.paused) 
+    var Audio = document.getElementById("butm");
+
+    if
+        (Audio.paused)
         Audio.play();
-  else 
-    Audio.pause();
+    else
+        Audio.pause();
 
 }
 
 function ricardo() {
     $('#rm').css({
-        "transform":"translate(0,-500px)"
+        "transform": "translate(0,-500px)"
     });
-    setTimeout(function() {
+    setTimeout(function () {
         $('#naruto').css({
-            "transform":"translate(1800px,0)"
+            "transform": "translate(1800px,0)"
         });
-    },1000);
-    setTimeout(function() {
-        var Audio = document.getElementById("narutoo"); 
+    }, 1000);
+    setTimeout(function () {
+        var Audio = document.getElementById("narutoo");
         Audio.pause();
         Audio.currentTime = 0;
         $('#naruto').attr(
-            "src","../gif/nars.png"
+            "src", "../gif/nars.png"
         );
         $('#naruto').css({
-            'width':'100px',
-            'height':'150px',
+            'width': '100px',
+            'height': '150px',
         });
-    },2200);
+    }, 2200);
 }
-function playNar() { 
-    
-    var Audio = document.getElementById("narutoo"); 
+function playNar() {
 
- if 
-    (Audio.paused) 
+    var Audio = document.getElementById("narutoo");
+
+    if
+        (Audio.paused)
         Audio.play();
-  else 
-    Audio.pause();
+    else
+        Audio.pause();
 
 }
 
 function tbcde() {
 
-    var Audio = document.getElementById("butm"); 
-    
-    setTimeout(function() {
+    var Audio = document.getElementById("butm");
+
+    setTimeout(function () {
         $('.tbcd').css({
-            "transform":"translate(0, 0)"
+            "transform": "translate(0, 0)"
         });
         $('.oback').css({
             'transform': 'translate(0,0)'
@@ -351,12 +309,12 @@ function tbcde() {
         $('body').css({
             'overflow': 'hidden'
         });
-       }, 3500);
-       setTimeout(function() {
+    }, 3500);
+    setTimeout(function () {
         Audio.pause();
-        Audio.currentTime=0;
+        Audio.currentTime = 0;
         $('.tbcd').css({
-            "transform":"translate(-5000px,0)"
+            "transform": "translate(-5000px,0)"
         });
         $('.oback').css({
             'transform': 'translate(-5000px,0)'
@@ -367,9 +325,9 @@ function tbcde() {
         $('body').css({
             'overflow': 'visible'
         });
-       }, 10700);
+    }, 10700);
 }
 
 function scrollTest() {
-        window.scrollTo(0, 1080);
+    window.scrollTo(0, 1080);
 }

@@ -28,6 +28,9 @@
 .themeBlueShowMoreButton:hover {
     background: #365581;
 }
+
+/* library */ 
+
 .themeBlueLibraryBottom {
     outline: 1px solid #1e3249;
     background: #1e3249;
@@ -47,4 +50,19 @@
 }
 .themeBrightLibraryItself, .themeBrightLibrarySearchForm {
     background: #222222;
+}
+
+/* Calendar */
+
+.themeBlueCalendarContainer {
+    background: #25456b;
+}
+.themeBlueCalendarLogo, .themeBlueCalendarCard {
+    color: #26a4ed !important;
+}
+
+/* Guidelines */
+
+.themeBlueGuidelinesContainer {
+    background: #25456b;
 }

@@ -2,10 +2,13 @@
     .library-games {
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 400px;
+        grid-template-columns: 2fr 1fr;
     }
-    .news {
-        overflow: auto;
+    .news-main, .news-secondary {
+        height: 24vw;
+    }
+    .featuredmainshow {
+        height: 32vw;
     }
 }
 @media only screen and (max-width: 1100px) {
@@ -43,6 +46,32 @@
     }
     .buttonSwitchThemeBright {
         font-size: 18px;
+    }
+    .new-main-info-text {
+        font-size: 18px;
+    }
+    .main-preview-button {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .main-preview-desc-left, .main-preview-desc-left-black {
+        display: none;
+    }
+    .main-preview-desc-right {
+        font-size: 26px;
+        text-align: center;
+    }
+    .main-preview-button {
+        padding: 5px;
+        line-height: 1;
+    }
+    .main-preview-button i {
+        font-size: 18px;
+        padding: 0;
+    }
+    .main-preview-button span {
+        display: none;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -86,14 +115,103 @@
         grid-area: 2/1/2/-1;
         margin-top: 10px;
     }
+    .new-main-info-text {
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 576px){
+    .featuredmainshow {
+        display: none;
+    }
     .hot-games-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 400px 275px 275px 60px;
+        grid-template-rows: 2fr 1fr 1fr 60px;
     }
-    .show-more-button {
-        transform: scale(auto);
+    .news-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .news-container a .news-main img {
+        display: none;
+    }
+    .news-container a .news-main {
+        background: url(../img/n/RDR2nc.png);
+        background-position: center;
+        background-size: 100% auto;
+    }
+    .news-container a .news-secondary img {
+        display: none;
+    }
+    .news-container a:nth-child(2) .news-secondary {
+        background: url(../img/n/RE7Bnc.png);
+        background-position: center;
+        background-size: 100% auto;
+    }
+    .news-container a:nth-child(3) .news-secondary {
+        background: url(../img/n/2Dfc.png);
+        background-position: center;
+        background-size: 100% auto;
+    }
+    .inside-footer {
+        line-height: 2;
+    }
+    .bottomFooter {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .game-product:hover .game-product-price-initial {
+        display: none;
+    }
+    .game-product-logo {
+        width: 75px;
+        height: 35px;
+        vertical-align: center;
+        padding-top: 25px;
+    }
+    .game-product-logo img {
+        display: none;
+    }
+    .game-product-container a:first-child .game-product .game-product-logo {
+        background: url(../img/mg/ac.png);
+    }
+    .game-product-container a:nth-child(2) .game-product .game-product-logo {
+        background: url(../img/mg/bc.png);
+    }
+    .game-product-container a:nth-child(3) .game-product .game-product-logo {
+        background: url(../img/mg/cc.png);
+    }
+    .game-product-container a:nth-child(4) .game-product .game-product-logo {
+        background: url(../img/mg/dc.png);
+    }
+    .game-product-container a:nth-child(5) .game-product .game-product-logo {
+        background: url(../img/mg/ec.png);
+    }
+    .game-product-container a:nth-child(6) .game-product .game-product-logo {
+        background: url(../img/mg/fc.png);
+    }
+    .game-product-container a:nth-child(7) .game-product .game-product-logo {
+        background: url(../img/mg/gc.png);
+    }
+    .game-product-container a:nth-child(8) .game-product .game-product-logo {
+        background: url(../img/mg/hc.png);
+    }
+    .game-product-container a:nth-child(9) .game-product .game-product-logo {
+        background: url(../img/mg/ic.png);
+    }
+    .game-product-container a:last-child .game-product .game-product-logo {
+        background: url(../img/mg/jc.png);
+    }
+    .game-product-desc-name {
+        font-size: 14px;
+    }
+    .game-product-price-initial {
+        top: 10px;
+        font-size: 10.5px;
+    }
+    .game-product-desc-price{
+        font-size: 14px;
     }
 }

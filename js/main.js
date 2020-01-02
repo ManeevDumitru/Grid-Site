@@ -88,9 +88,18 @@ function buttonSwitchThemeBright(){
         $('.hot-games-footer').removeClass('themeDarkLibraryBottom');
         $('.library-games-button-container').removeClass('themeDarkLibraryBottom');
         $('.topFooter,.bottomFooter').removeClass('themeDarkFooter');
-        // // // // // // //
+        // // // // Library // // //
         $('.libraryItself').addClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').addClass('themeBrightLibrarySearchForm');
+        ////// Calendar /////
+        $('.calendarLogo').removeClass('themeDarkCalendarLogo');
+        $('.calendarContainer').removeClass('themeDarkCalendarContainer');
+        $('.card-CalendarGameDesc').removeClass('themeDarkCalendarCard');
+        ///// Guidelines /////
+        $('.guidelines').removeClass('themeDarkGuidelinesContainer');
+        $('.guidelines h3').removeClass('themeDarkGuidelinesLogo');
+        $('.guidelines p').removeClass('themeDarkGuidelinesText');
+        $('.guidelines li').removeClass('themeDarkGuidelinesText');
             /* Remove Blue */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
@@ -104,6 +113,12 @@ function buttonSwitchThemeBright(){
         $('.library-games-button-container').removeClass('themeBlueLibraryBottom');
         $('.middleFooter').removeClass('themeBlueMiddleFooter');
         $('.topFooter,.bottomFooter').removeClass('themeBlueFooter');
+        ///// Calendar /////
+        $('.calendarLogo').removeClass('themeBlueCalendarLogo');
+        $('.calendarContainer').removeClass('themeBlueCalendarContainer');
+        $('.card-CalendarGameDesc').removeClass('themeBlueCalendarCard');
+        //// Guidelines ////
+        
     });
 }
 
@@ -120,6 +135,15 @@ function buttonSwitchThemeDark(){
         $('.hot-games-footer').addClass('themeDarkLibraryBottom');
         $('.library-games-button-container').addClass('themeDarkLibraryBottom');
         $('.topFooter,.bottomFooter').addClass('themeDarkFooter');
+        ///// Calendar /////
+        $('.calendarLogo').addClass('themeDarkCalendarLogo');
+        $('.calendarContainer').addClass('themeDarkCalendarContainer');
+        $('.card-CalendarGameDesc').addClass('themeDarkCalendarCard');
+        //////Guidelines ////
+        $('.guidelines').addClass('themeDarkGuidelinesContainer');
+        $('.guidelines h3').addClass('themeDarkGuidelinesLogo');
+        $('.guidelines p').addClass('themeDarkGuidelinesText');
+        $('.guidelines li').addClass('themeDarkGuidelinesText');
             /* Remove */
         $('body').removeClass('themeBlueBody');
         $('header').removeClass('themeBlueNav');
@@ -133,9 +157,16 @@ function buttonSwitchThemeDark(){
         $('.library-games-button-container').removeClass('themeBlueLibraryBottom');
         $('.middleFooter').removeClass('themeBlueMiddleFooter');
         $('.topFooter,.bottomFooter').removeClass('themeBlueFooter');
-        ///////////
+        ////// Library /////
         $('.libraryItself').removeClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
+        ////// Calendar ////
+        $('.calendarLogo').removeClass('themeBlueCalendarLogo');
+        $('.calendarContainer').removeClass('themeBlueCalendarContainer');
+        $('.card-CalendarGameDesc').removeClass('themeBlueCalendarCard');
+        ///// Guidelines/////
+        $('.guidelines').removeClass('themeBlueGuidelinesContainer');
+        
     });
 }
 
@@ -154,6 +185,10 @@ function buttonSwitchThemeBlue(){
         $('.library-games-button-container').addClass('themeBlueLibraryBottom');
         $('.middleFooter').addClass('themeBlueMiddleFooter');
         $('.topFooter,.bottomFooter').addClass('themeBlueFooter');
+        /* Calendar */
+        $('.calendarLogo').addClass('themeBlueCalendarLogo');
+        $('.calendarContainer').addClass('themeBlueCalendarContainer');
+        $('.card-CalendarGameDesc').addClass('themeBlueCalendarCard');
             /* Remove */
         $('body').removeClass('themeDarkBody');
         $('header').removeClass('themeDarkNav');
@@ -168,6 +203,16 @@ function buttonSwitchThemeBlue(){
         //////////
         $('.libraryItself').removeClass('themeBrightLibraryItself');
         $('.sectionForSearchForm').removeClass('themeBrightLibrarySearchForm');
+        //////////
+        $('.calendarLogo').removeClass('themeDarkCalendarLogo');
+        $('.calendarContainer').removeClass('themeDarkCalendarContainer');
+        $('.card-CalendarGameDesc').removeClass('themeDarkCalendarCard');
+        //////////
+        $('.guidelines').removeClass('themeDarkGuidelinesContainer');
+        $('.guidelines').removeClass('themeDarkGuidelinesContainer');
+        $('.guidelines h3').removeClass('themeDarkGuidelinesLogo');
+        $('.guidelines p').removeClass('themeDarkGuidelinesText');
+        $('.guidelines li').removeClass('themeDarkGuidelinesText');
     });
 }
 
