@@ -98,6 +98,8 @@ a {
     grid-area: 1/2/1/2;
 }
 
+
+
 /*Section*/
 
 /*Section*/
@@ -1156,7 +1158,6 @@ a:hover .cardLibraryGameLogo {
 /* Desc Price */
 
 .card-GameDescPrice {
-    text-align: left;
     font-weight: 500;
     display: grid;
     grid-template-rows: 1fr;
@@ -1332,6 +1333,7 @@ a:hover .cardLibraryGameLogo {
 /* register.html */
 
 /* register.html */
+
 
 .registrationFormContainer {
     max-width: 500px;

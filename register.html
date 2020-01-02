@@ -62,13 +62,13 @@
                     <i class="fas fa-bars"></i>
                     <ul id="ul1Mobile">
                         <li>
-                            <a href="index.html">Home</a> 
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="calendar.html">Calendar</a> 
+                            <a href="calendar.html">Calendar</a>
                         </li>
                         <li>
-                            <a href="library.html">Library</a> 
+                            <a href="library.html">Library</a>
                         </li>
                         <li>
                             <a href="#">
@@ -103,61 +103,60 @@
         </div>
     </header>
 
-    <section id="regSec">
+    <section>
         <h1>If u read this... GJ</h1>
 
         <div class="registrationFormContainer">
             <div class="registrationLogo">
                 Registration
             </div>
-            <form name="registrationForm">
+            <form name="registrationForm" id="form">
                 <div class="registrationRowForName">
                     <div class="fieldForName">
                         <label>Name</label>
-                        <input type="Text" name="inputRegisterName">
+                        <input type="Text" name="inputRegisterName" form='form'>
                     </div>
                     <div class="fieldForSurname">
                         <label>Surname</label>
-                        <input type="Text" name="inputRegisterSurname">
+                        <input type="Text" name="inputRegisterSurname" form='form'>
                     </div>
                 </div>
                 <div class="registrationRowForDate">
                     <label>Birthday Date</label>
                     <div class="fieldForDates">
-                        <select class="Date" required form name="inputBirthDay">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">1</option>
-                            <option value="12">2</option>
-                            <option value="13">3</option>
-                            <option value="14">4</option>
-                            <option value="15">5</option>
-                            <option value="16">6</option>
-                            <option value="17">7</option>
-                            <option value="18">8</option>
-                            <option value="19">9</option>
-                            <option value="20">10</option>
-                            <option value="21">1</option>
-                            <option value="22">2</option>
-                            <option value="23">3</option>
-                            <option value="24">4</option>
-                            <option value="25">5</option>
-                            <option value="26">6</option>
-                            <option value="27">7</option>
-                            <option value="28">8</option>
-                            <option value="29">9</option>
-                            <option value="30">10</option>
-                            <option value="31">10</option>
+                        <select class="Date" required form='form' name="inputBirthDay" size="1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
                         </select>
-                        <select class="Month" form name="inputBirthMonth">
+                        <select class="Month" name="inputBirthMonth" form='form'  size="1">
                             <option value="Jan">January</option>
                             <option value="Feb">February</option>
                             <option value="Mar">March</option>
@@ -171,7 +170,7 @@
                             <option value="Nov">November</option>
                             <option value="Dec">December</option>
                         </select>
-                        <select form name="inputBirthYear">
+                        <select name="inputBirthYear" form='form'  size="1">
                             <option value="1">1999</option>
                             <option value="2">2000</option>
                             <option value="3">2001</option>
@@ -185,19 +184,19 @@
                 <div class="registrationRowForGender">
                     <label>Gender</label>
                     <div class="fieldForFemaleGender">
-                        <input type="radio" name="inputRegisterGender" id="genderFemale" form>
+                        <input type="radio" name="inputRegisterGender" id="genderFemale" form='form'>
                         <label>Female</label>
                     </div>
                     <div class="fieldForMaleGender">
-                        <input type="radio" name="inputRegisterGender" form>
+                        <input type="radio" name="inputRegisterGender" form='form'>
                         <label>Male</label>
                     </div>
                 </div>
                 <div class="registrationRowForAccountName">
                     <label>Account Name</label>
                     <div class="fieldForAccountInput">
-                        <input type="text" name="inputRegisterAccountName">
-                        <select>
+                        <input type="text" name="inputRegisterAccountName" form='form'>
+                        <select form='form' name="selectEmailType" size="1">
                             <option value="mail.ru">@mail.ru</option>
                             <option value="list.ru">@list.ru</option>
                             <option value="bk.ru">@bk.ru</option>
@@ -207,13 +206,13 @@
                 <div class="registrationRowForPassword">
                     <label>Password</label>
                     <div class="fieldForPassword">
-                        <input type="password" name="inputRegisterPassword">
+                        <input type="password" name="inputRegisterPassword" form='form'>
                     </div>
                 </div>
                 <div class="registrationRowForPhoneNumber">
                     <label>Phone number</label>
                     <div class="fieldForPhoneNumber">
-                        <select>
+                        <select form='form' name="selectNumerPref">
                             <option value="373">+373</option>
                             <option value="211">+211</option>
                             <option value="911">+911</option>
@@ -222,7 +221,7 @@
                     </div>
                 </div>
                 <div class="registrationRowForConfirm">
-                    <input type="submit" value="Confirm" formmethod="GET">
+                    <input type="submit" value="Confirm" formmethod="GET" form='form'>
                     <div class="fieldForGuidelines">
                         By confirming you accept the <a href="guidelines.html">following guidelines</a>
                     </div>
@@ -231,39 +230,39 @@
         </div>
     </section>
 
-        <button class="buttonUp">
-            <i class="fa fa-caret-up" aria-hidden="true"></i>
-        </button>
-        <div class="background">
-            <div class="popupLoginMenu themeBrightPopupForm">
-                <form class="popupLoginForm">
-                    Login
-                    <div class="inputPopupTextAbove">
-                        Nickname
+    <button class="buttonUp">
+        <i class="fa fa-caret-up" aria-hidden="true"></i>
+    </button>
+    <div class="background">
+        <div class="popupLoginMenu themeBrightPopupForm">
+            <form class="popupLoginForm">
+                Login
+                <div class="inputPopupTextAbove">
+                    Nickname
+                </div>
+                <input type="text" name="inputLogin">
+                <div class="inputPopupTextAbove">
+                    Password
+                </div>
+                <div class="loginPasswordInput">
+                    <input type="password" name="inputPassword">
+                </div>
+                <div class="registerLink">
+                    <a href="register.html" id="reg">Register now</a>
+                </div>
+                <div class="loginExtraVariantsContainer">
+                    Login with
+                    <div class="loginExtraVariants">
+                        <a href="https://vk.com"><i class="fab fa-vk"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://web.telegram.org"><i class="far fa-paper-plane"></i></a>
                     </div>
-                    <input type="text" name="inputLogin">
-                    <div class="inputPopupTextAbove">
-                        Password
-                    </div>
-                    <div class="loginPasswordInput">
-                        <input type="password" name="inputPassword">
-                    </div>
-                    <div class="registerLink">
-                        <a href="register.html" id="reg">Register now</a>
-                    </div>
-                    <div class="loginExtraVariantsContainer">
-                        Login with
-                        <div class="loginExtraVariants">
-                            <a href="https://vk.com"><i class="fab fa-vk"></i></a>
-                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                            <a href="https://web.telegram.org"><i class="far fa-paper-plane"></i></a>
-                        </div>
-                    </div>
-                    <input type="submit" formmethod="post" class="inputSubmit" name="loginSubmit" value="Submit">
-                </form>
-                <button><i class="fas fa-times-circle"></i></button>
-            </div>
+                </div>
+                <input type="submit" formmethod="post" class="inputSubmit" name="loginSubmit" value="Submit">
+            </form>
+            <button><i class="fas fa-times-circle"></i></button>
         </div>
+    </div>
 
     <footer class="footer">
         <div class="topFooter">
