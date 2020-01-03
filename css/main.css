@@ -823,26 +823,6 @@ input[name="inputLogin"], input[name="inputPassword"] {
     overflow: hidden;
 }
 
-/* Form */
-
-.sectionForSearchForm {
-    padding: 20px 10px;
-    position: relative;
-    color: #ececec;
-}
-
-.sectionForSearchForm input {
-    border: 2px solid rgb(161, 161, 161);
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 4px 5px 4px 40px;
-    background-color: white;
-    background-image: url('../img/utility/searchicon.png');
-    background-position: 10px;
-    background-repeat: no-repeat;
-    width: 200px;
-}
-
 /* Library Itself */
 
 .libraryItself {
